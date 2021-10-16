@@ -8,11 +8,14 @@ function countdown(due){
 }
 
 let goal = new Date();
-// 次の一行を追加
+// さっき追加した行
 console.log(goal)
 // ここまで
 goal.setHours(23);
 goal.setMinutes(59);
 goal.setSeconds(59);
+// さらに追加
+console.log(goal)
+// ここまで
 
 console.log(countdown(goal));
