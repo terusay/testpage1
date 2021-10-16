@@ -18,11 +18,7 @@ goal.setHours(23);
 goal.setMinutes(59);
 goal.setSeconds(59);
 
-console.log(countdown(goal));
-// 以下追記
-const counter = countdown(goal);
-const time = `${counter[0]}時間${counter[1]}分${counter[2]}秒`;
-// ここから
+
 console.log(countdown(goal));
 const counter = countdown(goal);
 const time = `${counter[0]}時間${counter[1]}分${counter[2]}秒`;
