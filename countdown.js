@@ -31,5 +31,19 @@ document.getElementById('timer').textContent = time;
 // ここまでを切り取り
 
 function recalc() {
-
+  console.log(countdown(goal));
+  const counter = countdown(goal);
+  const time = `${counter[0]}時間${counter[1]}分${counter[2]}秒`
+  console.log(time);
+  document.getElementById('timer').textContent = time;
+  // ※次の一行を忘れずに追加！！
+  refresh();
 }
+
+// ここから
+function refresh() {
+  setTimeout(recalc, 1000);
+}
+
+recalc();
+// ここまでを追加
